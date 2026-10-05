@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.container > p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.card,
+.resultado {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    padding: 12px;
+
+    border: 1px solid #ccc;
+    border-radius: 6px;
+
+    font-size: 16px;
+}
+
+button {
+    margin-top: 10px;
+
+    padding: 12px;
+
+    border: none;
+    border-radius: 6px;
+
+    background: #222;
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background: #444;
+}
+
+.resultado {
+    display: none;
+    margin-top: 20px;
+}
+
+.resultado h2 {
+    margin-bottom: 15px;
+}
+
+.resultado p {
+    margin-bottom: 10px;
+}
+
+#valorFrete {
+    margin-top: 15px;
+
+    font-size: 22px;
+    font-weight: bold;
+}
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Calculadora de Frete</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <h1>Calculadora de Frete</h1>
+
+        <p>
+            Informe o CEP de origem para calcular uma estimativa do frete.
+        </p>
+
+        <div class="card">
+
+            <label for="cepOrigem">CEP de origem</label>
+
+            <input
+                type="text"
+                id="cepOrigem"
+                placeholder="Ex: 60000-000"
+                maxlength="9"
+            >
+
+            <button onclick="calcularFrete()">
+                Calcular Frete
+            </button>
+
+        </div>
+
+        <div id="resultado" class="resultado">
+
+            <h2>Resultado</h2>
+
+            <p id="origem"></p>
+
+            <p id="destino">
+                Destino: 60740-020
+            </p>
+
+            <p id="distancia"></p>
+
+            <p id="valorFrete"></p>
+
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
